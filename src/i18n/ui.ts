@@ -11,9 +11,9 @@ export const ui = {
         "nav.about": "About Us",
         "nav.contact": "Contact",
         "nav.products": "Products",
-        "buy.now": "Buy Now on WhatsApp",
+        "buy.now": "Buy Now",
         "switcher.label": "Language",
-        "site.title": "Pure Wood Press Oils",
+        "site.title": "Vidhataa Farms",
 
         // Home Page
         "home.hero.headline": "Experience the Purity of Tradition: Truly Cold Wood Pressed Oils.",
@@ -40,19 +40,19 @@ export const ui = {
         // Contact Page
         "contact.title": "Get in Touch",
         "contact.address.label": "Address",
-        "contact.address.value": "At Post - [Your Village/City Name], Tal - [Taluka], Dist - [District], India",
+        "contact.address.value": "VIDHATAA FARMS Bhokar - Nanded Main Road , Near Narwat Gaon, NH 61, Bhokar, Maharashtra 431801",
         "contact.phone.label": "Phone / WhatsApp",
         "contact.email.label": "Email",
-        "contact.email.value": "info@woodpressoils.com",
+        "contact.email.value": "info@vidhataafarms.com",
     },
     mr: {
         "nav.home": "मुख्य पृष्ठ",
         "nav.about": "आमच्याबद्दल",
         "nav.contact": "संपर्क",
         "nav.products": "उत्पादने",
-        "buy.now": "व्हॉट्सअ‍ॅपवर खरेदी करा",
+        "buy.now": "खरेदी करा",
         "switcher.label": "भाषा",
-        "site.title": "शुद्ध लाकडी घाणा तेल",
+        "site.title": "विधाता फार्मस",
 
         // Home Page
         "home.hero.headline": "परंपरेची शुद्धता अनुभवा: अस्सल लाकडी घाण्याचे तेल.",
@@ -79,9 +79,9 @@ export const ui = {
         // Contact Page
         "contact.title": "संपर्क साधा",
         "contact.address.label": "पत्ता",
-        "contact.address.value": "मु.पो. - [तुमच्या गावाचे नाव], ता. - [तालुका], जि. - [जिल्हा], भारत",
+        "contact.address.value": "विधाता फार्मस, नांदेड मुख्य रस्ता, नरवट पाटी जवळ , भोकर ,नांदेड, महाराष्ट्र, 431801",
         "contact.phone.label": "फोन / व्हॉट्सअ‍ॅप",
         "contact.email.label": "ईमेल",
-        "contact.email.value": "info@woodpressoils.com",
+        "contact.email.value": "info@vidhataafarms.com",
     },
 } as const;
