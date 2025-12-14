@@ -1,43 +1,66 @@
 ---
-import { ui } from '../i18n/ui';
+import { ui } from "../i18n/ui";
 
 interface Props {
-  lang: 'en' | 'mr';
+  lang: "en" | "mr";
 }
 
 const { lang } = Astro.props;
 
 const t = ui[lang];
-const otherLang = lang === 'en' ? 'mr' : 'en';
-const otherLangLabel = ui[lang]['switcher.label'] + ': ' + (lang === 'en' ? 'मराठी' : 'English');
+const otherLang = lang === "en" ? "mr" : "en";
+const otherLangLabel =
+  ui[lang]["switcher.label"] + ": " + (lang === "en" ? "मराठी" : "English");
 
-const homeLink = `/${lang}/`;
-// Simple toggle for now, going to home of other lang or keeping same path could be complex without knowing current path context easily in Astro static without standardizing all paths. 
+const homeLink = `/woodpressoil/${lang}/`;
+// Simple toggle for now, going to home of other lang or keeping same path could be complex without knowing current path context easily in Astro static without standardizing all paths.
 // For this simple site, toggling to the root of the other language is a safe MVP approach or replacing the current path segment.
 // Let's try to just switch the prefix.
 const currentPath = Astro.url.pathname;
-const otherLangPath = currentPath.replace(`/${lang}`, `/${otherLang}`);
+const otherLangPath = currentPath.replace(
+  `/woodpressoil/${lang}`,
+  `/woodpressoil/${otherLang}`,
+);
 ---
 
 <header class="bg-stone-50 border-b border-stone-200 sticky top-0 z-50">
   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-    <a href={homeLink} class="text-2xl font-bold text-amber-800 hover:text-amber-900 transition-colors">
-      {t['site.title']}
+    <a
+      href={homeLink}
+      class="text-2xl font-bold text-amber-800 hover:text-amber-900 transition-colors"
+    >
+      {t["site.title"]}
     </a>
 
     <nav class="hidden md:flex items-center gap-6">
-      <a href={`/${lang}/`} class="text-stone-700 hover:text-amber-700 font-medium">{t['nav.home']}</a>
-      <a href={`/${lang}/#products`} class="text-stone-700 hover:text-amber-700 font-medium">{t['nav.products']}</a>
-      <a href={`/${lang}/#about`} class="text-stone-700 hover:text-amber-700 font-medium">{t['nav.about']}</a>
-      <a href={`/${lang}/#contact`} class="text-stone-700 hover:text-amber-700 font-medium">{t['nav.contact']}</a>
+      <a
+        href={`/woodpressoil/${lang}/`}
+        class="text-stone-700 hover:text-amber-700 font-medium"
+        >{t["nav.home"]}</a
+      >
+      <a
+        href={`/woodpressoil/${lang}/#products`}
+        class="text-stone-700 hover:text-amber-700 font-medium"
+        >{t["nav.products"]}</a
+      >
+      <a
+        href={`/woodpressoil/${lang}/#about`}
+        class="text-stone-700 hover:text-amber-700 font-medium"
+        >{t["nav.about"]}</a
+      >
+      <a
+        href={`/woodpressoil/${lang}/#contact`}
+        class="text-stone-700 hover:text-amber-700 font-medium"
+        >{t["nav.contact"]}</a
+      >
     </nav>
 
     <div class="flex items-center gap-4">
-      <a 
-        href={otherLangPath} 
+      <a
+        href={otherLangPath}
         class="text-sm font-semibold text-stone-600 border border-stone-300 px-3 py-1 rounded hover:bg-stone-100 transition-colors"
       >
-        {lang === 'en' ? 'मराठी' : 'English'}
+        {lang === "en" ? "मराठी" : "English"}
       </a>
     </div>
   </div>
