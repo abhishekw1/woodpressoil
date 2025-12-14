@@ -5,7 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://woodpressoil.github.io',
+  site: 'https://abhishekw1.github.io',
+  base: '/woodpressoil',
   vite: {
     plugins: [tailwindcss()]
   }
