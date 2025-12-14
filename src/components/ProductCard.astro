@@ -12,7 +12,10 @@ const { product, lang } = Astro.props;
 
 const name = product.name[lang];
 const description = product.description[lang];
-const message = product.whatsappMessage[lang];
+const baseMessage = product.whatsappMessage[lang];
+const site = Astro.site ? Astro.site.origin : 'https://abhishekw1.github.io';
+const imageUrl = new URL(product.image, site).href;
+const message = `${baseMessage}\n\nProduct: ${name}\nPrice: ${product.price}\nImage: ${imageUrl}`;
 const buyLabel = ui[lang]['buy.now'];
 ---
 
