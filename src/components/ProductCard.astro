@@ -16,15 +16,15 @@ const message = product.whatsappMessage[lang];
 const buyLabel = ui[lang]['buy.now'];
 ---
 
-<div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full border border-stone-100">
+<div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full border border-barley-corn-100">
   <img 
     src={product.image} 
     alt={name} 
     class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
   />
   <div class="p-6 flex flex-col flex-grow">
-    <h3 class="text-xl font-bold text-stone-800 mb-2">{name}</h3>
-    <p class="text-stone-600 mb-4 flex-grow">{description}</p>
+    <h3 class="text-xl font-bold text-barley-corn-800 mb-2">{name}</h3>
+    <p class="text-barley-corn-600 mb-4 flex-grow">{description}</p>
     <div class="mt-auto flex flex-col items-center gap-4">
       <span class="text-lg font-bold text-amber-700">{product.price}</span>
       <WhatsAppButton message={message} label={buyLabel} />

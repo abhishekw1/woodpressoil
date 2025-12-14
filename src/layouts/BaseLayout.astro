@@ -24,12 +24,12 @@ const { title, lang } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-stone-50 text-stone-800 font-['Outfit',sans-serif] min-h-screen flex flex-col">
+  <body class="bg-barley-corn-50 text-barley-corn-800 font-['Outfit',sans-serif] min-h-screen flex flex-col">
     <Header lang={lang} />
     <main class="flex-grow container mx-auto px-4 py-8">
       <slot />
     </main>
-    <footer class="bg-stone-800 text-stone-400 py-6 text-center mt-auto">
+    <footer class="bg-barley-corn-800 text-barley-corn-400 py-6 text-center mt-auto">
       <p>&copy; {new Date().getFullYear()} {ui[lang]['site.title']}. All rights reserved.</p>
     </footer>
   </body>

@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --color-barley-corn-50: #f6f5f0;
+  --color-barley-corn-100: #e9e7d8;
+  --color-barley-corn-200: #d4cfb4;
+  --color-barley-corn-300: #bbb289;
+  --color-barley-corn-400: #a79968;
+  --color-barley-corn-500: #9e8d5d;
+  --color-barley-corn-600: #82704c;
+  --color-barley-corn-700: #69573f;
+  --color-barley-corn-800: #5a4939;
+  --color-barley-corn-900: #4f4134;
+  --color-barley-corn-950: #2c231c;
+}
