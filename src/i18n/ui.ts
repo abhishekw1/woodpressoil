@@ -44,6 +44,7 @@ export const ui = {
         "contact.phone.label": "Phone / WhatsApp",
         "contact.email.label": "Email",
         "contact.email.value": "info@vidhataafarms.com",
+        "contact.directions": "Get Directions",
     },
     mr: {
         "nav.home": "मुख्य पृष्ठ",
@@ -83,5 +84,6 @@ export const ui = {
         "contact.phone.label": "फोन / व्हॉट्सअ‍ॅप",
         "contact.email.label": "ईमेल",
         "contact.email.value": "info@vidhataafarms.com",
+        "contact.directions": "दिशा मिळवा",
     },
 } as const;
